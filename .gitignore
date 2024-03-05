@@ -1,0 +1,4 @@
+.venv/
+src/__pycache__/
+src/_vars.py
+__pycache__/
