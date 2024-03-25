@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 import tkinter as tk
 from tkinter.messagebox import showinfo
-from main import run, end, progress
+from main import run, end
 
 root = Tk()
  

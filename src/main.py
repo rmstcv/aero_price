@@ -14,7 +14,6 @@ options = Options()
 options.add_argument("--start-maximized")
 driver = webdriver.Chrome(service = svc, options = options)
 
-progress = 1
 def run():
   if sys.version_info < (3, 11):
     print("Требуется Python версии 3.11 или новее")
@@ -22,9 +21,7 @@ def run():
   global driver
 
   driver.get(AERO_PATH)
-  time.sleep(10)
-  global progress
-  progress = 50
+  time.sleep(5)
 
   city_destination = driver.find_element(By.ID, class_CITY_DEPART)
   city_destination.send_keys(CITY_DEST)
